@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Prediction</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#f4f4f4;
+            text-align:center;
+            padding:30px;
+        }
+        .box{
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            width:500px;
+            margin:auto;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+        input{
+            width:90%;
+            padding:10px;
+            margin:5px;
+        }
+        button{
+            padding:12px 20px;
+            background:#007bff;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+        h2{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Healthcare Prediction</h1>
+
+    <form action="/predict" method="post">
+
+        <input type="text" name="f1" placeholder="Feature 1" required>
+        <input type="text" name="f2" placeholder="Feature 2" required>
+        <input type="text" name="f3" placeholder="Feature 3" required>
+        <input type="text" name="f4" placeholder="Feature 4" required>
+        <input type="text" name="f5" placeholder="Feature 5" required>
+        <input type="text" name="f6" placeholder="Feature 6" required>
+        <input type="text" name="f7" placeholder="Feature 7" required>
+        <input type="text" name="f8" placeholder="Feature 8" required>
+        <input type="text" name="f9" placeholder="Feature 9" required>
+        <input type="text" name="f10" placeholder="Feature 10" required>
+        <input type="text" name="f11" placeholder="Feature 11" required>
+        <input type="text" name="f12" placeholder="Feature 12" required>
+        <input type="text" name="f13" placeholder="Feature 13" required>
+        <input type="text" name="f14" placeholder="Feature 14" required>
+        <input type="text" name="f15" placeholder="Feature 15" required>
+        <input type="text" name="f16" placeholder="Feature 16" required>
+        <input type="text" name="f17" placeholder="Feature 17" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+</div>
+
+</body>
+</html>
